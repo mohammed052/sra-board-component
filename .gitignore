@@ -5,6 +5,8 @@ sdkconfig
 # Build folder
 build/
 
+_build
+
 #sdkconfig files
 sdkconfig*
 
