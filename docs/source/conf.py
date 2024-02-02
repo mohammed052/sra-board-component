@@ -5,6 +5,8 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
+html_output_path = os.path.join(os.environ.get('READTHEDOCS_OUTPUT', '_build'), 'html')
 
 project = 'sra-board-components'
 copyright = '2024, sra'
