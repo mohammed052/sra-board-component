@@ -5,19 +5,24 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-import os
-html_output_path = os.path.join(os.environ.get('READTHEDOCS_OUTPUT', '_build'), 'html')
 
-project = 'sra-board-components'
-copyright = '2024, sra'
-author = 'sra'
+import os
+import sys
+
+sys.path.insert(0,os.path.abspath(".."))
+
+project = 'SRA-BOARD-COMPONENT'
+copyright = '2024, SRA'
+author = 'SRA'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["sphinx.ext.todo", "sphinx.ext.viewcode", "sphinx.ext.autodoc"]
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
 
 
 # -- Options for HTML output -------------------------------------------------
